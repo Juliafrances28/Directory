@@ -1,0 +1,23 @@
+{
+  "name": "employeedirectory",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juliafrances28/EmployeeDirectory.git"
+  },
+  "author": "Julia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juliafrances28/EmployeeDirectory/issues"
+  },
+  "homepage": "https://github.com/Juliafrances28/EmployeeDirectory#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "express": "^4.17.1"
+  }
+}

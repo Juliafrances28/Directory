@@ -3,21 +3,42 @@
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "App.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.1"
+  },
+  "devDependencies": {
+    "eslint-plugin-import": "^2.22.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Juliafrances28/EmployeeDirectory.git"
   },
-  "author": "Julia",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Juliafrances28/EmployeeDirectory/issues"
   },
   "homepage": "https://github.com/Juliafrances28/EmployeeDirectory#readme",
-  "dependencies": {
-    "bootstrap": "^4.6.0",
-    "express": "^4.17.1"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

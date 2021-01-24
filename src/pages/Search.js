@@ -8,7 +8,7 @@ import Alert from "../components/Alert";
 class Search extends Component {
   state = {
     search: "",
-    jobs: [],
+    employeeName: [],
     result: [],
     error: "",
   };
@@ -16,10 +16,10 @@ class Search extends Component {
   // When the component mounts, get a list of all possible jobs at the company and update this.state.jobs
 
   componentDidMount() {
-    API.getEmployeeList()
+    API.getRandomUser()
       .then((res) =>
         this.setState({
-          Emloyees: res.data.message,
+          Users: res.data.users,
         })
       )
       .catch((err) => console.log(err));
@@ -31,7 +31,7 @@ class Search extends Component {
 
   handleFormSubmit = (event) => {
     event.preventDefault();
-    API.getCompanyJobs(this.state.search)
+    API.getName (this.state.search)
       .then((res) => {
         if (res.data.status === "error") {
           throw new Error(res.data.message);
@@ -45,7 +45,7 @@ class Search extends Component {
     return (
       <div>
         <Container style={{ miniHeight: "80%" }}>
-          <h1 className="text-center">Search By Job!</h1>
+          <h1 className="text-center">Search By Name!</h1>
           <Alert
             type="danger"
             style={{
@@ -58,7 +58,7 @@ class Search extends Component {
           <SearchForm
             handleFormSubmit={this.handleFormSubmit}
             handleInputChange={this.handleInputChange}
-            jobs={this.state.jobs}
+            name={this.state.name}
           />
           <SearchResults results={this.state.results} />
         </Container>
